@@ -78,7 +78,7 @@ class Train(object):
             iou_s.append(s)
             #vis.line([s.item()],[epoch],win='iou',update='append')
             #vis.line([[loss_train,loss_test]],[epoch],win='loss',update='append')
-        return loss_t,iou_s，loss_v
+        return loss_t,iou_s,loss_v
     def train(self,epoch):
         total_loss,nums = 0,0
         self.model.train()
